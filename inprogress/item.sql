@@ -61,3 +61,30 @@ now(), now()
 );
 
 update item set label = 'Vintage Edition' where name = 'Eau de Parfum for Men';
+
+
+Insert into item (version, name, short_description, description, image, label, date_created, last_updated) values
+(0, 'Cream Facelift',
+'A luxurious face cream that targets wrinkles with the efficiency and precision of an aesthetic procedure.',
+'A natural base with exquisite texture, rich in beeswax, aloe, exclusive oils, extracts and vitamins, creates a comfortable feeling against the skin, night and day.<br>
+
+ This medically inspired cream combines five powerful active ingredients:<br>
+<ul>
+    <li>
+    Peptide with Botox-mimicking effect targeting all expression lines (upper lip wrinkles, chin, nasal and décolleté folds, crow’s feet, forehead and glabellar frown lines).
+    </li>
+    <li>
+    Matrikine-mimetic peptide promoting optimal tissue structure and filling in wrinkles from the inside.
+    </li>
+    <li>
+    Adenosine, a naturally occurring nucleoside with collagen synthesis effect and fibroblast proliferation effect, improving the appearance of wrinkles and preserving youthful skin texture and tone.
+    </li>
+    <li>
+    Specific biotechnological full effective spectrum of high and low molecular weight hyaluronan (second generation Hyaluronic Acid) with short-term lifting 3D effect, enhancing the penetration of other active ingredients
+    </li>
+</ul>
+ Damask rose essential oil with potent antioxidant, antiseptic and anti-inflammatory properties. It strengthens the skin while toning and lifting by contracting the blood vessels.',
+'https://lh3.googleusercontent.com/ndvA7rkjGDc_ACcJNtncH5FIsMtLko2ftdA4S6MNs3VRWskoHJVsjgPEAlrT0WOlvoDRju2ncePVCV_p_xM3MTKAhJHW30-ajiXa-u8rQLYSOMrLxYWkmfAMDDG73aWj30UCYwSsaYeGAVkaaRavtPp9EBNg0ffm7Xx0dXa2_c6XhztZ54ZBuRBPlln-vVxCeoh-iocRhF6rnhcKsPwFWHi4UfjCv9WlCPC-z00WZweAHhS3Hes1QYJozVzqX2ibMpH4LfFaJ-DPWXHYHzV7vo-6KUX2jaRjPmSytmNPvSclQU1SP1Ew6351tqbxttLRxb6jYykCKiunXCdxF1l583515uEYqTba_4c99y884vew3963lHQLKSco-XrqfcRlCP5uWFjGz44h8Vxs0WVzk3pyzyu6OOFBYD2L1lPtLCkIZ_E3CD5AFXg8FnWYI7qZ57aplMF7L9LTzxSXzDdoGWGfCndJo65qm6Leo5kkYGLCg0Nny_qgxh8rY__xKe1C2RXynCvKubq-36Ir95E2HbyyLa1urV_67LIXd6mzORwK4NwTizhZpJxgAoK7afdNEEv9lf0ISOm-U_e23HDJUg7e1U_RJmOo-X4JE6_2KSkllJMEM8sNVkFQyY0U6Vj-9qvn3kMvYae7UeNq_yJomK1O2eY4dWP7=w1000-h554-no',
+'Infinity',
+now(), now()
+);

@@ -12,3 +12,8 @@ insert into collection_item (version, collection_id, item_id) values
 (0, (select id from collection where identifier = 'infinity'),
 (select id from item where name = 'Serum 3D Filler')
 );
+
+insert into collection_item (version, collection_id, item_id) values
+(0, (select id from collection where identifier = 'infinity'),
+(select id from item where name = 'Cream Facelift')
+);
