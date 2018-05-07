@@ -10,8 +10,10 @@ create table item(
 );
 
 alter table item add unique(name);
+alter table item add column label varchar(20) null default null;
 
-Insert into item (version, name, short_description, description, image, date_created, last_updated) values (0, 'Serum 3D Filler', 'An extraordinary power for regaining and retaining a youthful look, with the lightest of touch.', 
+Insert into item (version, name, short_description, description, image, date_created, last_updated) values (0,
+'Serum 3D Filler', 'An extraordinary power for regaining and retaining a youthful look, with the lightest of touch.',
 'This medically inspired serum combines four powerful active ingredients to achieve a visibly smoother and plumper skin, lifting the skin to reduce the spread of wrinkles:<br>
 <ul>
   <li>
@@ -30,6 +32,7 @@ Adenosine, a naturally occurring nucleoside with collagen synthesis and fibrobla
 ''http://redgoldlondon.com/wp-content/uploads/2016/05/Rose_Perfection_Oil_Serum_BIG.jpg
 ',now(), now());
 
+update item set label = 'Infinity' where name = 'Serum 3D Filler';
 
 
 Insert into item (version, name, short_description, description, image, date_created, last_updated) values
@@ -46,6 +49,8 @@ Along with the strong protection (SPF 50), it provides lovely correction effect.
 now(), now()
 );
 
+update item set label = 'Snow Porcelain' where name = 'Brightening Day Cream Vivid Glow SPF 50';
+
 Insert into item (version, name, short_description, description, image, date_created, last_updated) values
 (0, 'Eau de Parfum for Men',
 'An irresistible exciting fragrance for a timeless masculine style.
@@ -54,3 +59,5 @@ Insert into item (version, name, short_description, description, image, date_cre
 'https://lh3.googleusercontent.com/e-RPL6yTECuPNvHAD0fNuZPV5JlnFXqPGtCNGqDZG5MKvSWrRNrddrYGenccuARVM5MmUHzAKrYgefHz8cnPf5Wl6nZYkAERxFDCQFOtRXEitpP8JnYxo3wBpOR_AHt7FL0tkquWlwm57rFq7xsj0iM8npqnlhF0lLoV-Nny-mVU5GqZi1Veigke02T40ms_8wWVgonNTK9PZ37H0GdK3FAiOphnHhvEFDFaf_6a1p9-0_IDsqWZEuIYl3YUGNlbJ05lrXpWqclPh9_FueazUVYhHrSSLtpoPzfyn25rJRKHrch-ljtE6QJPFPhDonQdpIcMNcsdUykTcPs4xGqmhPpDBGWx5BhDGBdOojHV7zAufyaoO2ZbhI0XtFNXrddyWyvEhhZnjYjuswqC1gSk0Sh-H0284EnP8HaFh2wsgCeoV9JR6eq22iUnJPtYGfJLjXEdtt-qWK-HNK0JhdICDp2ueU620lm3uudyzDPKkHwV9ATFRGsTdIccCWjF93e48jP0BO3TMBYbogsuxNSmufNVXs1mwarVRsQYGaNU1u1LW0P73SjJMRwN4oeNQYkz7_jxMabM9n8rBZUaxpG049ks7oQyV_lDmBLKlYkSxreCzL3YY_u_89A7c7GGJAyP9Yy405-7k0o0CwIJdhN-H0_gfFxJ0VQ=w1000-h554-no',
 now(), now()
 );
+
+update item set label = 'Vintage Edition' where name = 'Eau de Parfum for Men';
